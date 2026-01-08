@@ -11,12 +11,30 @@ public class Main {
 		int menu;
 		do {
 			System.out.println("Elija una de las siguientes opciones: ");
+			System.out.println("1.Para sumar");
+			System.out.println("2.Para multiplicar");
 			System.out.println("3.Para restar");
 			System.out.println("4.Para dividir");
 			System.out.println("0.Para salir");
 			System.out.println("Introduce el número de la opción elegida: ");
 			menu=Leer.datoInt();
 			switch (menu) {
+				case 1:
+					System.out.println("Introduzca el primer numero");
+					numero1 = Leer.datoDouble();
+					System.out.println("Introduzca el segundo numero");
+					numero2 = Leer.datoDouble();
+					System.out.printf("El resultado es %.4f", numero1 + numero2);
+					break;
+					
+				case 2:
+					System.out.println("Introduzca el primer numero");
+					numero1 = Leer.datoDouble();
+					System.out.println("Introduzca el segundo numero");
+					numero2 = Leer.datoDouble();
+					System.out.printf("El resultado es %.4f", numero1 * numero2);
+					break;
+					
 				case 3:
 					System.out.println("Introduce el primer número: ");
 					numero1=Leer.datoDouble();
@@ -41,6 +59,6 @@ public class Main {
 			}
 		} while (menu != 0);
 		
+		System.out.println("Gracias por usar el programa");
 	}
-
 }

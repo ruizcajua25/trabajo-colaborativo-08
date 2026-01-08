@@ -1,5 +1,6 @@
 package utilidades;
 
+<<<<<<< HEAD
 import java.io.BufferedInputStream;
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -7,6 +8,12 @@ import java.io.InputStreamReader;
 
 public class Leer {
 	
+=======
+import java.io.*;
+
+public class Leer {
+
+>>>>>>> suma-multiplicacion
 	public static String dato() {
 		String sdato = " ";
 		try {
@@ -53,7 +60,11 @@ public class Leer {
 		return Double.parseDouble(dato());
 	}
 
+<<<<<<< HEAD
 }
 
 
 
+=======
+}
+>>>>>>> suma-multiplicacion
